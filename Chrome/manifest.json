@@ -1,0 +1,25 @@
+{
+  "name": "TTEC Finesse Auto Login",
+  "description": "TTEC Finesse Auto Login",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons":{
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+ "content_scripts": [
+   {
+     "matches": ["https://fin125.dv.ccenterprisecloud.com:8445/desktop/logon.html*"],
+     "js": ["finesse_login.js"]
+   }
+ ]
+}

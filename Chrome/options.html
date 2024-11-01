@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head><title>TTEC Finesse Login Options</title></head>
+<body>
+
+Agent Extension:
+<input type="tel" id="ext" placeholder="1005550007"><br/>
+
+<div>
+<label>
+  <input type="checkbox" id="finesse_ma_enable">
+    Enable Mobile Agent
+</label>
+<select id="finesse_ma_mode">
+ <option value="CALL_BY_CALL">CALL_BY_CALL</option>
+ <option value="NAILED">NAILED_UP</option>
+</select>
+</div>
+<br/>
+Mobile Extension:
+<input type="tel" id="finesse_ma_dialnum" placeholder="1025550007"><br/>
+Enable Auto-Login
+  <input type="checkbox" id="autologin" checked>
+
+<div id="status"></div>
+<button id="save">Save</button>
+
+<script src="options.js"></script>
+</body>
+</html>
